@@ -123,12 +123,22 @@ h2 {
 }
 
 .duvida .paragrafo {
+  height: 0;
+  padding: 0 24px;
   margin-top: -8px;
-  padding: 24px;
   border-right: 1px solid #ff725e;
   border-bottom: 1px solid #ff725e;
   border-left: 1px solid #ff725e;
   border-radius: 0 0 8px 8px;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.duvida.ativa .paragrafo {
+  height: fit-content;
+  opacity: 1;
+  padding: 24px;
 }
 
 /* Rodapé */
